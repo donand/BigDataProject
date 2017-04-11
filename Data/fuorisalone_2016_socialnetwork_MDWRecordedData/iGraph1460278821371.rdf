@@ -1,0 +1,72 @@
+<rdf:RDF
+    xmlns:j.0="http://www.citydatafusion.org/ontologies/2014/1/sma#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://rdfs.org/sioc/types#"
+    xmlns:j.2="http://purl.org/dc/terms/"
+    xmlns:j.3="http://rdfs.org/sioc/ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.4="http://streamreasoning.org/ontology/SLD#" > 
+  <rdf:Description rdf:about="http://www.streamreasoning.com/demos/sld/sentimentdecorated/recorder/2016-04-08T10:44:44.648Z/iGraph1460278821371">
+    <j.4:hasTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-10T11:00:21.371+02:00</j.4:hasTimestamp>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/MilanoCentrale">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milanocentrale</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/123456789">
+    <j.3:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/378800000660645635/3f6e972aa53530143768a36f122ec803_normal.png</j.3:avatar>
+    <j.3:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">StreamReasoning</j.3:account_of>
+    <j.3:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@streamreasoning</j.3:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.keepalive.com/</j.0:has_profile>
+    <j.3:creator_of rdf:resource="http://streamreasoning.org/post/mp/273041"/>
+    <j.3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">123456789</j.3:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/fuorisalone">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuorisalone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/856327506">
+    <j.3:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/620944896321388544/axud_xn9_bigger.png</j.3:avatar>
+    <j.3:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Milano Centrale</j.3:account_of>
+    <j.3:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@MilanoCle</j.3:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/MilanoCle</j.0:has_profile>
+    <j.3:creator_of rdf:resource="http://streamreasoning.org/post/mp/719087578163466240"/>
+    <j.3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">856327506</j.3:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/2101716394">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Image"/>
+    <j.3:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/media/Cfc0CN5WEAQ4p1F.jpg</j.3:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719087578163466240">
+    <j.3:topic rdf:resource="http://streamreasoning.org/post/tag/fuorisalone"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.3:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#fuorisalone a #MilanoCentrale: vi aspetta l’installazione “Oggetto Inutile – Dedica a Munari” https://t.co/ArQeekoiGU</j.3:content>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.2944</j.0:sentiment>
+    <j.3:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/MilanoCle/status/719087578163466240</j.3:link>
+    <j.2:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.2:language>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.3:has_creator rdf:resource="http://streamreasoning.org/post/user/856327506"/>
+    <j.2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-10T11:00:13.000+02:00</j.2:created>
+    <j.2:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.3:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.3:has_container>
+    <j.3:links_to rdf:resource="http://streamreasoning.org/post/link/2101716394"/>
+    <j.3:topic rdf:resource="http://streamreasoning.org/post/tag/MilanoCentrale"/>
+    <j.3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719087578163466240</j.3:id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/273041">
+    <j.2:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.2:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-10T11:00:15.572+02:00</j.2:created>
+    <j.3:has_creator rdf:resource="http://streamreasoning.org/post/user/123456789"/>
+    <j.3:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/streamreasoning/status/273041</j.3:link>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.3:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KeepAlive</j.3:has_container>
+    <j.2:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</j.2:language>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.3:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">keep alive</j.3:content>
+    <j.3:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">273041</j.3:id>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#KeepAlive"/>
+  </rdf:Description>
+</rdf:RDF>

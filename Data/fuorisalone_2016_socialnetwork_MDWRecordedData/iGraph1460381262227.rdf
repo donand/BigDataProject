@@ -1,0 +1,865 @@
+<rdf:RDF
+    xmlns:j.0="http://www.citydatafusion.org/ontologies/2014/1/sma#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.1="http://rdfs.org/sioc/types#"
+    xmlns:j.2="http://www.citydatafusion.org/ontologies/2014/1/cse#"
+    xmlns:j.3="http://purl.org/dc/terms/"
+    xmlns:j.4="http://rdfs.org/sioc/ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.5="http://streamreasoning.org/ontology/SLD#"
+    xmlns:j.6="http://www.w3.org/2003/01/geo/wgs84_pos#" > 
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/324236886">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/459314139903438848/17xkcQpt_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francesca Gatti</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Fra_Gatti</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/Fra_Gatti</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516712631185412"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">324236886</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/MDW2016">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mdw2016</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516829195104256">
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/EdImmagine/status/719516829195104256</j.4:link>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A proposito di #design e #Fuorisalone2016 https://t.co/7aay3REGyM : la nostra case history</j.4:content>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/2559139855"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/design"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:54.000+02:00</j.3:created>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516829195104256</j.4:id>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/2121392506"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.streamreasoning.com/demos/sld/sentimentdecorated/recorder/2016-04-08T10:44:44.648Z/iGraph1460381262227">
+    <j.5:hasTimestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:27:42.227+02:00</j.5:hasTimestamp>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/391268242">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/RMestroni</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@RMestroni</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">raffaella mestroni</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/Fvg">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fvg</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517288307798017">
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RT @fuorisalone: Ready for tomorrow? Check out the Official Guide of #Fuorisalone2016! https://t.co/Of8XxHfPho #MDW2016 https://t.co/wUoku1…</j.4:content>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/33584327"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1981463589"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:27:44.000+02:00</j.3:created>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/MDW2016"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/43311894"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517288307798017</j.4:id>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.2064</j.0:sentiment>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</j.3:language>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/sararaldi2/status/719517288307798017</j.4:link>
+    <j.0:is_retweet_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719515247246237697</j.0:is_retweet_of>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/96837442"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517014755319809">
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1424346818"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517014755319809</j.4:id>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RT @paola_pozzoli82: ORA #gildabojardi @internimagazine x l'apertura della #MDW2016 #OpenBorders https://t.co/Xz8GvCRlxv</j.4:content>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/21207974"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/MDW2016"/>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.2028</j.0:sentiment>
+    <j.0:is_retweet_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516404316258304</j.0:is_retweet_of>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/gildabojardi"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:26:38.000+02:00</j.3:created>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/2994418973"/>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/3523292356"/>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/DSforDESIGN/status/719517014755319809</j.4:link>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/OpenBorders"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/Pmi">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pmi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1424346818">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.periscope.tv/w/adpLMzQyMjI0OTN8MUJSS2pNWkxEVkx4d5-cY7OHlPt5A9zxkaFmD4lZxN44azyul6794jzUspot</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516832122736641">
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Ambiente"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.0:is_retweet_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719509294987767808</j.0:is_retweet_of>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/498929461"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1267993054"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/96197478"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Green__Planner/status/719516832122736641</j.4:link>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516832122736641</j.4:id>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RT @RoccoLuigi55: #Ambiente https://t.co/BbmjjOwi72</j.4:content>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0041</j.0:sentiment>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:55.000+02:00</j.3:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/fingerfood">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fingerfood</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/1226994090">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/kia_tortorella</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@kia_tortorella</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chiara Tortorella</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/area/Tortona Design">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortona Design</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/love">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">love</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/milan">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milan</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517147093975040">
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/88150280"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/OpenBorders"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/RadioR101/status/719517147093975040</j.4:link>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0258</j.0:sentiment>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:27:10.000+02:00</j.3:created>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517147093975040</j.4:id>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/ZahaHadid"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1504308603"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il ricordo dedicato a #ZahaHadid #Fuorisalone2016 #OpenBorders https://t.co/VxxRshZRhb</j.4:content>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516752544198657">
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:36.000+02:00</j.3:created>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516752544198657</j.4:id>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@iSaloniofficial gli eventi imperdibili del #Fuorisalone 2016 https://t.co/FDXulKo1L6 https://t.co/d007vJqXZN</j.4:content>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/MarieClaire_it/status/719516752544198657</j.4:link>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone"/>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/70383427"/>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/436619027"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1011734418"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/551010226"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1106958444">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://fb.me/7OhwNR9D9</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1437563306">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.instagram.com/p/BED8RnSzELI/</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516925324177409">
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/947627738"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/fuorisalone"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/ZahaHadid"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:26:17.000+02:00</j.3:created>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516925324177409</j.4:id>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1437563306"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gilda Bojardi inaugura il #fuorisalone ricordando #ZahaHadid e la sua istallazione nel cortile… https://t.co/5PohG7ta8i</j.4:content>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Lazzarottoarch/status/719516925324177409</j.4:link>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/fuorisalone">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuorisalone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517168187150336">
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/JumboCollection/status/719517168187150336</j.4:link>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/365339498"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:27:15.000+02:00</j.3:created>
+    <j.0:is_retweet_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719515247246237697</j.0:is_retweet_of>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1981463589"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RT @fuorisalone: Ready for tomorrow? Check out the Official Guide of #Fuorisalone2016! https://t.co/Of8XxHfPho #MDW2016 https://t.co/wUoku1…</j.4:content>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517168187150336</j.4:id>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/43311894"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</j.3:language>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.2064</j.0:sentiment>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/33584327"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/MDW2016"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/yojitokuyoshi">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yojitokuyoshi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/718482296">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/2679218599/608bf862744c9b50449288a721ae1f07_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ghenos Communication</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Ghenos_net</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/Ghenos_net</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516852074987520"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">718482296</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/LexusDesignAward">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lexusdesignaward</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/smile">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">smile</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/Fuorisalone2016">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuorisalone2016</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/142790011">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/378800000115352868/eea8b2afaea47a2186702ad3a1e3a9c7_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEUCOS USA INC.</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@LeucosUSA</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/LeucosUSA</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516686517432320"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">142790011</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/53489268">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/527413911113314304/jk9nJhxl_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fashion Times</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@FashionTimesMag</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/FashionTimesMag</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517159731433472"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">53489268</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/dozen">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dozen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/look">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">look</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516733057417216">
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/mariaegizia/status/719516733057417216</j.4:link>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Il Fuorisalone trasforma la città Le vostre foto più belle sul Corriere https://t.co/OfBW2COyax</j.4:content>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/2017774179"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:31.000+02:00</j.3:created>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/18502923"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516733057417216</j.4:id>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/3052092295">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://instagram.com/dozen_design</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dozen_design</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dozen Design</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/2994418973">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/paola_pozzoli82</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@paola_pozzoli82</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola Pozzoli</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/designweek2016">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">designweek2016</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/551010226">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://bit.ly/1Q2Xxep</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/21207974">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/INTERNIMagazine</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@INTERNIMagazine</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interni Magazine</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/468893640">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Image"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/media/Cfw0nW7WwAAL_FL.jpg</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/1537426919">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://instagram.com/superstudiogroup</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superstudiogroup</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Superstudio Group</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/765371179">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/2675998618/b24412e0aa4e4590666348b76aea540d_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Studio 7B</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Studio_7B</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/Studio_7B</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517094094745601"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">765371179</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1319067799">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Image"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/media/Cfw9BX4W8AENK45.jpg</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/ZahaHadid">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zahahadid</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517159731433472">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/53489268"/>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/FashionTimesMag/status/719517159731433472</j.4:link>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nasturzio,prugne,foglie di shiso,sale,lamponi #fingerfood #yojitokuyoshi #LexusDesignAward  #Fuorisalone2016 https://t.co/s6HnJR0rZT</j.4:content>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/fingerfood"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/yojitokuyoshi"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1319067799"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/LexusDesignAward"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517159731433472</j.4:id>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:27:13.000+02:00</j.3:created>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516925609537537">
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/EdImmagine/status/719516925609537537</j.4:link>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vighi Security Doors al #Fuorisalone2016 #Pmi https://t.co/7aay3REGyM</j.4:content>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</j.3:language>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:26:17.000+02:00</j.3:created>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516925609537537</j.4:id>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/2121392506"/>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/2559139855"/>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0108</j.0:sentiment>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Pmi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/1490092939">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/Brera_District</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Brera_District</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BreraDesignDistrict</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/Ambiente">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ambiente</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516712631185412">
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/2100892703"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RT @RMestroni: #Cifra3 FattoBene. Per forza, fatto in #Fvg #maestriartigiani @solariudine @Brera_District #Fuorisalone2016  https://t.co/Yx…</j.4:content>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fvg"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/1490092939"/>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0065</j.0:sentiment>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/maestriartigiani"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516712631185412</j.4:id>
+    <j.0:is_retweet_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719508649035624448</j.0:is_retweet_of>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:26.000+02:00</j.3:created>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Fra_Gatti/status/719516712631185412</j.4:link>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/324236886"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/3165841727"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Cifra3"/>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/391268242"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/tie">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tie</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/location/408383442">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/cse#Venue"/>
+    <j.2:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Superstudio Più</j.2:name>
+    <j.6:long rdf:datatype="http://www.w3.org/2001/XMLSchema#double">9.1633596</j.6:long>
+    <j.6:lat rdf:datatype="http://www.w3.org/2001/XMLSchema#double">45.4519005</j.6:lat>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/mdw2016">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mdw2016</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/1372427371">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/604060891580088320/8kD1dJRI_bigger.jpg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">manuela caminada</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@CaminadaManuela</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/CaminadaManuela</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516800011083776"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1372427371</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/lol">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lol</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1542804342">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.marketingjournal.it/pp-shoes-fuorisalone-cartone-animato-2/</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/talenti">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">talenti</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516852074987520">
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/21207974"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:26:00.000+02:00</j.3:created>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/718482296"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516852074987520</j.4:id>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Ghenos_net/status/719516852074987520</j.4:link>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/talenti"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/145578712"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In @LaStatale con #talenti per la #MilanoDesignWeek2016 #SaloneDelMobile @INTERNIMagazine https://t.co/WUidsale7p</j.4:content>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/SaloneDelMobile"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/153611735"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/MilanoDesignWeek2016"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516773574438913">
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516773574438913</j.4:id>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Textile table module by Adriana G. Fortunato 
+#bebrazilian  #mdw2016 https://t.co/L6gNTw19a5</j.4:content>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">en</j.3:language>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/snlbjrc/status/719516773574438913</j.4:link>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:41.000+02:00</j.3:created>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/bebrazilian"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/mdw2016"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/638296456"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">-0.0565</j.0:sentiment>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/607470612"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/SaloneDelMobile">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">salonedelmobile</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/947627738">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/440441953088331778/u8No3agT_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mauro Lazzarotto</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Lazzarottoarch</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/Lazzarottoarch</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516925324177409"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">947627738</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/Cifra3">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cifra3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/29688009">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/3261300886/6561095fb6d3b857e8593313a81a844d_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disma Pestalozza</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Dismatwit</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/Dismatwit</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516799096623104"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">29688009</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/superstudio">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">superstudio</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/436619027">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/iSaloniofficial</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@iSaloniofficial</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salone del Mobile</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516799096623104">
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516799096623104</j.4:id>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Dismatwit/status/719516799096623104</j.4:link>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:47.000+02:00</j.3:created>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/fuorisalone2016"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/460071461"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/29688009"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuori #fuorisalone2016 disposizioni comunali e quartiere https://t.co/ZzpZiHL689</j.4:content>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/43311894">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://fuorisalone.it/2016/it/eventi</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/OpenBorders">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">openborders</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/70383427">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/710393180886339585/YiVUGJm0_bigger.jpg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marie Claire Italia</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@MarieClaire_it</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/MarieClaire_it</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516752544198657"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">70383427</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1267993054">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/rilegno/status/719506963210584064</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/18502923">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/661182764314660864/CbHjXKwi_bigger.jpg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mariaegizia</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@mariaegizia</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/mariaegizia</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516733057417216"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18502923</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/2017774179">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://milano.corriere.it/notizie/cronaca/16_aprile_11/fuorisalone-condividete-noi-vostre-immagini-instagram-a0fe88d0-ffde-11e5-8c9c-128b0570e861.shtml</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/145578712">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/LaStatale</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@LaStatale</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Università di Milano</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/2780864247">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/639551146064015360/SJ602aIl_bigger.jpg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Francesco Allegretti</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@allegrettitweet</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/allegrettitweet</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517055746236417"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2780864247</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516686517432320">
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516686517432320</j.4:id>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1106958444"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:20.000+02:00</j.3:created>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Meet us at MilanoDesignWeek2016! https://t.co/GvORtkJ5L3</j.4:content>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/LeucosUSA/status/719516686517432320</j.4:link>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/142790011"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tl</j.3:language>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/498929461">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/463967992967999488/5_AEnlnh_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Green Planner</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@Green__Planner</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/Green__Planner</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516832122736641"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">498929461</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517055746236417">
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/2780864247"/>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/1226994090"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/allegrettitweet/status/719517055746236417</j.4:link>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/88150280"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517055746236417</j.4:id>
+    <j.0:is_retweet_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719508208038100992</j.0:is_retweet_of>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:26:48.000+02:00</j.3:created>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/468893640"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RT @RadioR101: Selfie dei nostri @kia_tortorella e @allegrettitweet al #Fuorisalone2016: siamo la radio ufficiale 😎 https://t.co/kEeY3rW7LB</j.4:content>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/2780864247"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/2559139855">
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517035038904320"/>
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/509987459778609154/ECMz8h_W_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Editoria&amp;Immagine</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@EdImmagine</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/EdImmagine</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516829195104256"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2559139855</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516925609537537"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/460071461">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.instagram.com/p/BED8OANPgY6/</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1981463589">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Image"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/media/Cfw7TcaWcAA_ziA.jpg</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/257394">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://instagram.com/lindamag</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lindamag</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Margherita Paleari</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/2121392506">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.editoriaimmagine.it/?p=2731</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/638296456">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.instagram.com/p/BED8NcaFQqw/</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/607470612">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/2762812691/993938e6a528ec66af67e403a26a1b11_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sanela Bajrić</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@snlbjrc</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/snlbjrc</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719516773574438913"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">607470612</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/153611735">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Image"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/media/Cfw8uuiWQAAOVlb.jpg</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/MilanoDesignWeek2016">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">milanodesignweek2016</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/bebrazilian">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bebrazilian</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/227016122">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://scontent.cdninstagram.com/t51.2885-19/s150x150/12501560_1077257958983878_1966364117_a.jpg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ｇｉａｎｍａｒｉａ</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gianmaria_spinella</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://instagram.com/gianmaria_spinella</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/1226086837291945500"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">227016122</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/2100892703">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Fra_Gatti/status/719505194795581440</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1672969917">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Link"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://fb.me/2odcZMHVq</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/dw16">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dw16</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/3523292356">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/643448638836969472/Yw96Yo68_bigger.jpg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DSforDESIGN</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@DSforDESIGN</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/DSforDESIGN</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517014755319809"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3523292356</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/96197478">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/RoccoLuigi55</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@RoccoLuigi55</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RoccoLuigiOriente</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/Fuorisalone">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuorisalone</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719516800011083776">
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/CaminadaManuela/status/719516800011083776</j.4:link>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1542804342"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719516800011083776</j.4:id>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/1372427371"/>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pèpè Shoes, il fuorisalone è un cartone “animato”… | MarketingJournal https://t.co/ygOZZAeQUp</j.4:content>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:25:47.000+02:00</j.3:created>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/88150280">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/RadioR101</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@RadioR101</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">R101</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/654674518472945664/nbDDaHPS_bigger.jpg</j.4:avatar>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517147093975040"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">88150280</j.4:id>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/gildabojardi">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gildabojardi</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/3165841727">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/solariudine</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@solariudine</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solari lineadesign</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/fuorisalone2016">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fuorisalone2016</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1011734418">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Image"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/media/Cfw8UbwWEAAtyfR.jpg</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/link/1504308603">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Image"/>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://pbs.twimg.com/media/Cfw8jahWwAEb3am.jpg</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/33584327">
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/fuorisalone</j.0:has_profile>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@fuorisalone</j.4:name>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuorisalone.it</j.4:account_of>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517094094745601">
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:26:57.000+02:00</j.3:created>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/765371179"/>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517094094745601</j.4:id>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</j.0:sentiment>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/1672969917"/>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salone del Mobile di Milano - Milan International Furniture Fair  e FUORISALONE 2016 | 12-17 Aprile |  Tutte Le... https://t.co/fKpl6A96yF</j.4:content>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/Studio_7B/status/719517094094745601</j.4:link>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/96837442">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/701694919849680898/5UzK-7Qn_bigger.jpg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sara Araldi</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@sararaldi2</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/sararaldi2</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517288307798017"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">96837442</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/1226086837291945500">
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/227016122"/>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/257394"/>
+    <j.0:stdResolutionImage rdf:datatype="http://www.w3.org/2001/XMLSchema">https://scontent.cdninstagram.com/l/t51.2885-15/s640x640/sh0.08/e35/12724982_1589803548003848_650614670_n.jpg?ig_cache_key=MTIyNjA4NjgzNzI5MTk0NTQ5OQ%3D%3D.2</j.0:stdResolutionImage>
+    <j.0:commentsCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</j.0:commentsCounter>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/fuorisalone"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/lol"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/design"/>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:22:42.000+02:00</j.3:created>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.instagram.com/p/BED73uAkY4b/</j.4:link>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Instagram</j.4:has_container>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</j.0:likesCounter>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/tie"/>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/1537426919"/>
+    <j.6:location rdf:resource="http://streamreasoning.org/post/location/408383442"/>
+    <j.0:is_in_reply_to rdf:resource="http://streamreasoning.org/post/user/3052092295"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/dw16"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/look"/>
+    <j.0:created_in rdf:resource="http://streamreasoning.org/area/Tortona Design"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/milan"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/smile"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nl</j.3:language>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">#tie' 🤘🏻 @dozen_design</j.4:content>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/dozen"/>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1226086837291945500</j.4:id>
+    <j.0:short_url rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.instagram.com/p/BED73uAkY4b/</j.0:short_url>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/designweek2016"/>
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Instagram_Micropost"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/love"/>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/superstudio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/maestriartigiani">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">maestriartigiani</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/user/365339498">
+    <j.4:avatar rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pbs.twimg.com/profile_images/519020911677018115/4voTPadj_bigger.jpeg</j.4:avatar>
+    <j.4:account_of rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jumbo Collection</j.4:account_of>
+    <j.4:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">@JumboCollection</j.4:name>
+    <j.0:has_profile rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.twitter.com/JumboCollection</j.0:has_profile>
+    <j.4:creator_of rdf:resource="http://streamreasoning.org/post/mp/719517168187150336"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">365339498</j.4:id>
+    <rdf:type rdf:resource="http://rdfs.org/sioc/ns#UserAccount"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/mp/719517035038904320">
+    <rdf:type rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Tweet"/>
+    <j.4:links_to rdf:resource="http://streamreasoning.org/post/link/2121392506"/>
+    <j.3:language rdf:datatype="http://www.w3.org/2001/XMLSchema#string">it</j.3:language>
+    <j.4:link rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://twitter.com/EdImmagine/status/719517035038904320</j.4:link>
+    <j.4:content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Le porte blindate e un progetto di innovazione al #Fuorisalone2016 https://t.co/7aay3REGyM</j.4:content>
+    <j.3:accessRights rdf:resource="http://www.citydatafusion.org/ontologies/2014/1/sma#Public"/>
+    <j.4:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">719517035038904320</j.4:id>
+    <j.3:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-04-11T15:26:43.000+02:00</j.3:created>
+    <j.0:sentiment rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0644</j.0:sentiment>
+    <j.0:likesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:likesCounter>
+    <j.0:sharesCounter rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</j.0:sharesCounter>
+    <j.4:topic rdf:resource="http://streamreasoning.org/post/tag/Fuorisalone2016"/>
+    <j.4:has_container rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Twitter</j.4:has_container>
+    <j.4:has_creator rdf:resource="http://streamreasoning.org/post/user/2559139855"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://streamreasoning.org/post/tag/design">
+    <rdf:type rdf:resource="http://rdfs.org/sioc/types#Tag"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">design</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
