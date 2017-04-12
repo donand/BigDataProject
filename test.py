@@ -9,10 +9,14 @@ from rdflib import Graph, plugin
 from rdflib.serializer import Serializer
 import json
 from pyld import jsonld
+from io import open
 
 json_tmp = []
 file_path = os.getcwd() + '\\Data\\fuorisalone_2016_socialdata\\'
 flist = [fname for fname in os.listdir(file_path) if fname.endswith('.rdf')]
+
+out = open(os.getcwd() + '\\Data\\social_data.json', 'w')
+
 for fname in flist[:100]:
     tmp = open(file_path + fname, encoding="UTF-8")
     g = Graph().parse(data=tmp.read())
@@ -34,10 +38,9 @@ type(json_tmp[0])
 '''
 
 
-out = open(os.getcwd() + '\\Data\\social_data.json', 'w')
+
 #json.dumps(json_tmp, ensure_ascii = False)
-
-s = json_tmp[0].decode('utf-8', "ignore")
-
-out.writelines(s)
+for i in range(0,len(json_tmp)):
+    s = json_tmp[i].decode('utf-8', "ignore")
+    out.writelines(s)
 out.close()
