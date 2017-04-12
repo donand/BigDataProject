@@ -1,0 +1,104 @@
+[
+    {
+        "@id": "http://streamreasoning.org/post/mp/693010",
+        "@type": [
+            "http://www.citydatafusion.org/ontologies/2014/1/sma#KeepAlive"
+        ],
+        "http://purl.org/dc/terms/accessRights": [
+            {
+                "@id": "http://www.citydatafusion.org/ontologies/2014/1/sma#Public"
+            }
+        ],
+        "http://purl.org/dc/terms/created": [
+            {
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "@value": "2016-04-08T12:49:13.003000+02:00"
+            }
+        ],
+        "http://purl.org/dc/terms/language": [
+            {
+                "@value": "en"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#content": [
+            {
+                "@value": "keep alive"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#has_container": [
+            {
+                "@value": "KeepAlive"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#has_creator": [
+            {
+                "@id": "http://streamreasoning.org/post/user/123456789"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#id": [
+            {
+                "@value": "693010"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#link": [
+            {
+                "@value": "https://twitter.com/streamreasoning/status/693010"
+            }
+        ],
+        "http://www.citydatafusion.org/ontologies/2014/1/sma#likesCounter": [
+            {
+                "@value": 0
+            }
+        ],
+        "http://www.citydatafusion.org/ontologies/2014/1/sma#sharesCounter": [
+            {
+                "@value": 0
+            }
+        ]
+    },
+    {
+        "@id": "http://www.streamreasoning.com/demos/sld/sentimentdecorated/recorder/2016-04-08T10:44:44.648Z/iGraph1460112553378",
+        "http://streamreasoning.org/ontology/SLD#hasTimestamp": [
+            {
+                "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+                "@value": "2016-04-08T12:49:13.378000+02:00"
+            }
+        ]
+    },
+    {
+        "@id": "http://streamreasoning.org/post/user/123456789",
+        "@type": [
+            "http://rdfs.org/sioc/ns#UserAccount"
+        ],
+        "http://rdfs.org/sioc/ns#account_of": [
+            {
+                "@value": "StreamReasoning"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#avatar": [
+            {
+                "@value": "https://pbs.twimg.com/profile_images/378800000660645635/3f6e972aa53530143768a36f122ec803_normal.png"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#creator_of": [
+            {
+                "@id": "http://streamreasoning.org/post/mp/693010"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#id": [
+            {
+                "@value": "123456789"
+            }
+        ],
+        "http://rdfs.org/sioc/ns#name": [
+            {
+                "@value": "@streamreasoning"
+            }
+        ],
+        "http://www.citydatafusion.org/ontologies/2014/1/sma#has_profile": [
+            {
+                "@value": "https://www.keepalive.com/"
+            }
+        ]
+    }
+]
