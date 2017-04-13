@@ -18,4 +18,10 @@ sorteddf= df.sort_values('squareid')
 sorteddf.to_csv("./Data/fuorisalone_2016_phone-data/phonesorted.csv",index=False)
 #counts=(len(df[df['squareid']==x]) for x in cellnames)
 
-occurrency_per_cell= df.squareid.value_counts()
+tot_activity_per_cell= []
+for i in range(0,len(cellnames)):
+    tot_activity_per_cell.append([cellnames[i], sum(df[df['squareid']==cellnames[i]].activity) ])
+
+df2 = pd.DataFrame(tot_activity_per_cell)
+df2.columns=['id','activity']
+df2= df2.sort_values('activity', ascending=False)
