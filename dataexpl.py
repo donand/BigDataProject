@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import gmplot
 
-df = pd.read_csv("./Data/fuorisalone_2016_phone-data/phone.csv")
+df = pd.read_csv("../phone.csv")
 
 cellnames= df.squareid.unique() #quante celle sono
 singlecell= df[df['squareid']==cellnames[0]]
@@ -18,7 +18,7 @@ var=singlecell.iloc[0]
 days = singlecell.day.unique()
 totalactivities= sum(df['activity'])
 sorteddf= df.sort_values('squareid')
-sorteddf.to_csv("./Data/fuorisalone_2016_phone-data/phonesorted.csv",index=False)
+sorteddf.to_csv("../phonesorted.csv",index=False)
 #counts=(len(df[df['squareid']==x]) for x in cellnames)
 
 
