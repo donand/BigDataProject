@@ -29,7 +29,14 @@ df_participations = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/
 
 # Parse json user positions
 df_user_positions = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/position.json")
+df_agenda = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/agenda.json")
+df_agenda_analytics = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/agenda_analytics.json")
 
+
+
+##################
+# EXPLORE EVENTS #
+##################
 # Perform the join of the two dataframes
 df_joined = pd.merge(df_event, df_location, left_on='location', right_on='id')
 
@@ -69,16 +76,41 @@ df_joined = df_joined.drop('days', axis=1)
 df_joined = df_joined.drop('brands', axis=1)
 
 # Plot events to map
-lat = [float(x) for x in df_joined['latitude']]
-lng = [float(x) for x in df_joined['longitude']]
-gmap = gmplot.GoogleMapPlotter(45.482291, 9.1875001, 13)
-gmap.scatter(lat, lng, "#000000", size = 10, marker = False)
-gmap.heatmap(lat, lng, radius=50, threshold=1, opacity=0.7)
-'''
-for (lt, ln) in zip(lat, lng):
-    gmap.marker(lt, ln, title = 'A')
-'''
-gmap.draw('events_map.html')
+def plotToMap(df, filename): 
+    lat = [float(x) for x in df['latitude']]
+    lng = [float(x) for x in df['longitude']]
+    gmap = gmplot.GoogleMapPlotter(45.482291, 9.1875001, 13)
+    gmap.scatter(lat, lng, "#000000", size = 10, marker = False)
+    gmap.heatmap(lat, lng, radius=50, threshold=1, opacity=0.7)
+    gmap.draw(filename)
+    
+plotToMap(df_joined, 'events_map.html')
 
-# Users participations
+
+# Assign events to geographical zones
+import math
+DEG_DIST_LAT = 111142
+DEG_DIST_LON = 78100
+df_events_zones = df_joined
+df_events_zones['latitude'] = df_joined['latitude'].map(lambda x: float(x))
+df_events_zones['longitude'] = df_joined['longitude'].map(lambda x: float(x))
+zones = {"Brera" : {'latitude': 45.472879, 'longitude' : 9.185288, 'radius': 750}, 
+         "Tortona":{'latitude': 45.452803, 'longitude' : 9.166398, 'radius': 750},
+         "Quadrilatero":{'latitude': 45.466730, 'longitude' : 9.197431, 'radius': 500},
+         "Lambrate":{'latitude': 45.484270, 'longitude' :  9.242877, 'radius': 750},
+         }
+def belong_to(latitude, longitude):
+    for zone in zones.keys():
+        if math.sqrt((abs(zones[zone]['latitude'] - latitude) * DEG_DIST_LAT)**2 + (abs(zones[zone]['longitude'] - longitude) * DEG_DIST_LON)**2) < zones[zone]['radius']:
+            return zone
+    return ''
+df_events_zones['zone'] = pd.Series([belong_to(row['latitude'],row['longitude'] )for index, row in df_events_zones[['latitude', 'longitude']].iterrows()])
+df_events_zones = df_events_zones[df_events_zones.zone != '']
+plotToMap(df_events_zones, 'events_map_in_zones.html')
+
+
+
+###################################################
+# EXPLORE USER PARTICIPATIONS IN AGENDA ANALYTICS #
+###################################################
 df_participations['date'] = pd.to_datetime(df_participations['date'], unit = 'ms')
