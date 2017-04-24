@@ -11,6 +11,10 @@ from pandas.io.json import json_normalize
 import gmplot
 import gmaps
 import numpy as np
+import math
+
+DEG_DIST_LAT = 111142
+DEG_DIST_LON = 78100
 
 df = pd.read_json("C:\Users\Riccardo\Documents\GitHub\BigDataProject\Data\fuorisalone_2016_anonymous_appdata\anon_db\event.json")
 event_list = []
@@ -55,25 +59,28 @@ with open('Data/fuorisalone_2016_anonymous_appdata/anon_db/agenda_analytics.json
 df_agenda_analytics = json_normalize(agenda_list)
 
 
-
-
-
-
-for lat, lng in zip(lats[:20], longs[:20]):
-    print (lat, lng)
-    
-m = gmaps.Map()
-m.add_layer(gmaps.heatmap_layer([(lat, lng) for lat,lng in zip(lats[:200],longs[:200])]))
-
-
 tmp['date']=pd.to_datetime(df_event['date'], unit = 'ms').normalize()
 
 df_event['event'].value_counts()
-    
+
 aggr = df_event.groupby([pd.DatetimeIndex(df_event['date']).normalize(),'event'])
 
 df_event.index = df_event['date']
 date_aggr = pd.groupby(df_event,by=[df_event.index.day,'event'])
+
+zones = {"Brera" : {'latitude': 45.472879, 'longitude' : 9.185288, 'radius': 750}, 
+         "Tortona":{'latitude': 45.452803, 'longitude' : 9.166398, 'radius': 750},
+         "Quadrilatero":{'latitude': 45.466730, 'longitude' : 9.197431, 'radius': 500},
+         "Lambrate":{'latitude': 45.484270, 'longitude' :  9.242877, 'radius': 750},
+         }
+
+def belong_to(latitude, longitude):
+    for zone in zones.keys():
+        if math.sqrt((abs(zones[zone]['latitude'] - latitude) * DEG_DIST_LAT)**2 + (abs(zones[zone]['longitude'] - longitude) * DEG_DIST_LON)**2) < zones[zone]['radius']:
+            return zone
+    return None
+
+df_position['zone'] = pd.Series([belong_to(row['latitude'],row['longitude'] )for index, row in df_position[['latitude', 'longitude']].iterrows()])
 
 
 
