@@ -84,7 +84,7 @@ def plotToMap(df, filename):
     gmap.heatmap(lat, lng, radius=50, threshold=1, opacity=0.7)
     gmap.draw(filename)
     
-plotToMap(df_joined, 'MapPlots/events_map.html')
+plotToMap(df_joined, 'DataExploration/MapPlots/events_map.html')
 
 
 # Assign events to geographical zones
@@ -106,11 +106,17 @@ def belong_to(latitude, longitude):
     return ''
 df_events_zones['zone'] = pd.Series([belong_to(row['latitude'],row['longitude'] )for index, row in df_events_zones[['latitude', 'longitude']].iterrows()])
 df_events_zones = df_events_zones[df_events_zones.zone != '']
-plotToMap(df_events_zones, 'MapPlots/events_map_in_zones.html')
+plotToMap(df_events_zones, 'DataExploration/MapPlots/events_map_in_zones.html')
 
+
+# Write and read from csv
+out = open('Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv', 'w')
+df_joined.to_csv(out, index = False)
+dddd = pd.read_csv('Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv', encoding = 'latin1')
 
 
 ###################################################
 # EXPLORE USER PARTICIPATIONS IN AGENDA ANALYTICS #
 ###################################################
 df_participations['date'] = pd.to_datetime(df_participations['date'], unit = 'ms')
+
