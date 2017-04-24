@@ -78,7 +78,7 @@ def belong_to(latitude, longitude):
     for zone in zones.keys():
         if math.sqrt((abs(zones[zone]['latitude'] - latitude) * DEG_DIST_LAT)**2 + (abs(zones[zone]['longitude'] - longitude) * DEG_DIST_LON)**2) < zones[zone]['radius']:
             return zone
-    return None
+    return ''
 
 df_position['zone'] = pd.Series([belong_to(row['latitude'],row['longitude'] )for index, row in df_position[['latitude', 'longitude']].iterrows()])
 
