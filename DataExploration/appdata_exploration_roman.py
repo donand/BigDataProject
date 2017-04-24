@@ -84,7 +84,7 @@ def plotToMap(df, filename):
     gmap.heatmap(lat, lng, radius=50, threshold=1, opacity=0.7)
     gmap.draw(filename)
     
-plotToMap(df_joined, 'events_map.html')
+plotToMap(df_joined, 'MapPlots/events_map.html')
 
 
 # Assign events to geographical zones
@@ -106,7 +106,7 @@ def belong_to(latitude, longitude):
     return ''
 df_events_zones['zone'] = pd.Series([belong_to(row['latitude'],row['longitude'] )for index, row in df_events_zones[['latitude', 'longitude']].iterrows()])
 df_events_zones = df_events_zones[df_events_zones.zone != '']
-plotToMap(df_events_zones, 'events_map_in_zones.html')
+plotToMap(df_events_zones, 'MapPlots/events_map_in_zones.html')
 
 
 
