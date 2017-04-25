@@ -3,6 +3,10 @@ import json
 from pandas.io.json import json_normalize
 import gmplot
 
+APP_DATA_PATH = 'Data/fuorisalone_2016_anonymous_appdata/anon_db/'
+
+# The CSV files must be read with parameter encoding='latin1'
+
 #############################
 # Parse jsons to dataframes #
 #############################
@@ -18,19 +22,25 @@ def convertToDataframe(path):
             pass
     return json_normalize(json_data)
 
+def writeDataframeToCSV(d, path):
+    out = open(path, 'w')
+    d.to_csv(out, index = False)
+    out.close()
+
+
 # Parse json events to dataframe
 df_event = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/event.json")
 
 # Parse json locations of the events to dataframe
 df_location = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/location.json")
 
-# Parse json user participations to events
-df_participations = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/events_analytic.json")
+# Parse json user visualizaions of events
+df_event_visualizations = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/events_analytic.json")
 
 # Parse json user positions
 df_user_positions = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/position.json")
 df_agenda = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/agenda.json")
-df_agenda_analytics = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/agenda_analytics.json")
+df_participations = convertToDataframe("Data/fuorisalone_2016_anonymous_appdata/anon_db/agenda_analytics.json")
 
 
 
@@ -52,6 +62,15 @@ df_joined.drop(labels_to_drop, axis = 1, inplace = True)
 
 # Rename columns
 df_joined = df_joined.rename(columns={'id_x': 'id_event', 'id_y': 'id_location'})
+df_joined.id_event = pd.to_numeric(df_joined.id_event)
+df_joined.id_location = pd.to_numeric(df_joined.id_location)
+df_joined.num_events = pd.to_numeric(df_joined.num_events)
+df_joined.latitude = pd.to_numeric(df_joined.latitude)
+df_joined.longitude = pd.to_numeric(df_joined.longitude)
+
+# Build dataframe for event clustering only with lat, lon and id
+df_event_clustering = df_joined[['id_event', 'latitude', 'longitude']]
+writeDataframeToCSV(df_event_clustering, APP_DATA_PATH + 'event_locations.csv')
 
 # Explode 'days' column into multiple lines
 for i in range(1,len(df_joined)):
@@ -109,17 +128,33 @@ df_events_zones = df_events_zones[df_events_zones.zone != '']
 plotToMap(df_events_zones, 'DataExploration/MapPlots/events_map_in_zones.html')
 
 
-# Write and read from csv
-out = open('Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv', 'w')
-df_joined.to_csv(out, index = False)
-dddd = pd.read_csv('Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv', encoding = 'latin1')
+# Write events to csv
+writeDataframeToCSV(df_joined, 'Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv')
+#dddd = pd.read_csv('Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv', encoding = 'latin1')
+
 
 
 ###################################################
 # EXPLORE USER PARTICIPATIONS IN AGENDA ANALYTICS #
 ###################################################
-df_participations['date'] = pd.to_datetime(df_participations['date'], unit = 'ms')
+# Count the participations per event
+df_participations_per_event = df_participations.groupby('event').count()
+df_participations_per_event['participations'] = df_participations_per_event['uuid']
+df_participations_per_event.drop(['uuid', '_id.$oid'], axis = 1, inplace = True)
 
+# Join the event and the participation dataframes
+df_participations_per_event_joined = pd.merge(df_joined, df_participations_per_event,
+                                              left_on = 'id_event', right_index = True)
+df_participations_per_event_joined['categories'] = df_participations_per_event_joined['categories'].map(
+        lambda x: tuple(x))
+df_participations_per_event_joined = df_participations_per_event_joined.drop(['id_location', 'indirizzo',
+                                                                              'nome', 'num_events', 'data',
+                                                                              'ora_inizio', 'ora_fine', 'zone'],
+                                                                                axis = 1).drop_duplicates()
+df_participations_per_event_joined = df_participations_per_event_joined.reset_index(drop = True)
+
+# Write the participations to CSV
+writeDataframeToCSV(df_participations_per_event_joined, 'Data/fuorisalone_2016_anonymous_appdata/anon_db/event_participations_agenda.csv')
 
 
 
