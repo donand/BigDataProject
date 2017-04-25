@@ -23,9 +23,7 @@ def convertToDataframe(path):
     return json_normalize(json_data)
 
 def writeDataframeToCSV(d, path):
-    out = open(path, 'w')
-    d.to_csv(out, index = False)
-    out.close()
+    d.to_csv(path, index = False)
 
 
 # Parse json events to dataframe
@@ -94,6 +92,8 @@ df_joined['categories'] = df_joined['categories'].map(lambda x:
 df_joined = df_joined.drop('days', axis=1)
 df_joined = df_joined.drop('brands', axis=1)
 
+
+
 # Plot events to map
 def plotToMap(df, filename): 
     lat = [float(x) for x in df['latitude']]
@@ -106,13 +106,13 @@ def plotToMap(df, filename):
 plotToMap(df_joined, 'DataExploration/MapPlots/events_map.html')
 
 
-# Assign events to geographical zones
+# Assign events to geographical zones (hardcoded)
 import math
 DEG_DIST_LAT = 111142
 DEG_DIST_LON = 78100
-df_events_zones = df_joined
-df_events_zones['latitude'] = df_joined['latitude'].map(lambda x: float(x))
-df_events_zones['longitude'] = df_joined['longitude'].map(lambda x: float(x))
+df_events_zones = df_joined.copy()
+df_events_zones['latitude'] = df_events_zones['latitude'].map(lambda x: float(x))
+df_events_zones['longitude'] = df_events_zones['longitude'].map(lambda x: float(x))
 zones = {"Brera" : {'latitude': 45.472879, 'longitude' : 9.185288, 'radius': 750}, 
          "Tortona":{'latitude': 45.452803, 'longitude' : 9.166398, 'radius': 750},
          "Quadrilatero":{'latitude': 45.466730, 'longitude' : 9.197431, 'radius': 500},
@@ -123,14 +123,19 @@ def belong_to(latitude, longitude):
         if math.sqrt((abs(zones[zone]['latitude'] - latitude) * DEG_DIST_LAT)**2 + (abs(zones[zone]['longitude'] - longitude) * DEG_DIST_LON)**2) < zones[zone]['radius']:
             return zone
     return ''
-df_events_zones['zone'] = pd.Series([belong_to(row['latitude'],row['longitude'] )for index, row in df_events_zones[['latitude', 'longitude']].iterrows()])
+df_events_zones['zone'] = pd.Series([belong_to(row['latitude'],row['longitude'] ) for index, row in df_events_zones[['latitude', 'longitude']].iterrows()])
 df_events_zones = df_events_zones[df_events_zones.zone != '']
+# Plot only events belonging to a zone
 plotToMap(df_events_zones, 'DataExploration/MapPlots/events_map_in_zones.html')
 
-
+df_joined.categories = df_joined.categories.map(lambda x: ','.join(x))
 # Write events to csv
 writeDataframeToCSV(df_joined, 'Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv')
 #dddd = pd.read_csv('Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv', encoding = 'latin1')
+
+
+
+
 
 
 
@@ -158,13 +163,17 @@ writeDataframeToCSV(df_participations_per_event_joined, 'Data/fuorisalone_2016_a
 
 
 
+
+
 ##########################
 # EXPLORE USER POSITIONS #
 ##########################
+
 df_user_positions['date'] = pd.to_datetime(df_user_positions.date, unit = 'ms')
 df_user_positions['day'] = df_user_positions.date.dt.day
 df_user_positions['hour'] = df_user_positions.date.dt.hour
 
+'''
 plotToMap(df_user_positions[df_user_positions.hour <= 6],
           'DataExploration/MapPlots/app_positions_0AM-6AM.html')
 plotToMap(df_user_positions[(df_user_positions.hour <= 12) & (df_user_positions.hour > 6)], 
@@ -173,3 +182,4 @@ plotToMap(df_user_positions[(df_user_positions.hour <= 18) & (df_user_positions.
           'DataExploration/MapPlots/app_positions_12AM-18PM.html')
 plotToMap(df_user_positions[(df_user_positions.hour <= 23) & (df_user_positions.hour > 18)], 
           'DataExploration/MapPlots/app_positions_18PM-24PM.html')
+'''
