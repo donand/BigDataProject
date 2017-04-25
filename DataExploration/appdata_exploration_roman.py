@@ -120,3 +120,21 @@ dddd = pd.read_csv('Data/fuorisalone_2016_anonymous_appdata/anon_db/event.csv', 
 ###################################################
 df_participations['date'] = pd.to_datetime(df_participations['date'], unit = 'ms')
 
+
+
+
+##########################
+# EXPLORE USER POSITIONS #
+##########################
+df_user_positions['date'] = pd.to_datetime(df_user_positions.date, unit = 'ms')
+df_user_positions['day'] = df_user_positions.date.dt.day
+df_user_positions['hour'] = df_user_positions.date.dt.hour
+
+plotToMap(df_user_positions[df_user_positions.hour <= 6],
+          'DataExploration/MapPlots/app_positions_0AM-6AM.html')
+plotToMap(df_user_positions[(df_user_positions.hour <= 12) & (df_user_positions.hour > 6)], 
+          'DataExploration/MapPlots/app_positions_6AM-12AM.html')
+plotToMap(df_user_positions[(df_user_positions.hour <= 18) & (df_user_positions.hour > 12)], 
+          'DataExploration/MapPlots/app_positions_12AM-18PM.html')
+plotToMap(df_user_positions[(df_user_positions.hour <= 23) & (df_user_positions.hour > 18)], 
+          'DataExploration/MapPlots/app_positions_18PM-24PM.html')
