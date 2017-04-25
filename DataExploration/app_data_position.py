@@ -33,3 +33,13 @@ def count_pos(timeslot, latitude, longitude):
     return len(df_position[mask])
 
 event['position_count'] = pd.Series([count_pos(row['timeslot'],row['latitude'],row['longitude']) for index, row in event.iterrows()])
+
+phone = pd.read_csv("Data/phone_aggregated_by_timeslot.csv")
+    
+cells = phone.drop_duplicates('squareid')
+cells = cells[['squareid','lat','lon']].reset_index(drop = True)
+
+def belong_to_cell(lat_event, lon_event, lat_cell, lon_cell):
+    return abs(lat_event - lat_cell) * DEG_DIST_LAT < 75 & abs(lon_cell - lon_event) * DEG_DIST_LON < 75
+
+event['phone_count'] = pd.Series([cell['activity'] for index, row in event.iterrows() for index, cell in cells.iterrows() if belong_to_cell(row['latitude'], row['longitude'], cell['lat'], cell['lon'])])
