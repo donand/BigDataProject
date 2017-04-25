@@ -7,8 +7,13 @@ def getTimeslots(start, end):
     h2 = int(end.split(':')[0])
     m1 = int(h1 / 6)
     m2 = int(h2 / 6) if h2 != 0 else 3
-    res = [str(i) for i in range(m1, m2 + 1)]
-    return ','.join(res)
+    if h1 > h2:
+        res = [str(i) for i in range(m1, 4)]
+        res += [str(i) for i in range(int(h2/6) + 1)]
+    else:
+        res = [str(i) for i in range(m1, m2 + 1)]
+    res = list(set(res))
+    return ','.join(sorted(res))
 
 def writeDataframeToCSV(d, path):
     d.to_csv(path, index = False)
