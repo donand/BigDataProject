@@ -40,6 +40,8 @@ aggrdf_hour=pd.DataFrame(aggrdf_hour[0].tolist())
 aggrdf_hour.columns =['squareid','timeslot','lat','lon']
 aggrdf_hour = aggrdf_hour.assign(activity=roman2['activity'].values)
 
+#aggrdf_hour.to_csv(open("Data/phone_aggregated_by_timeslot.csv", 'w'), index = False)
+
 ACT_THRESH=1000
 lat_0=[]
 lat_1=[]
