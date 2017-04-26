@@ -16,3 +16,4 @@ df = pd.concat([df, a], axis = 1)
 df.drop(0, axis = 1, inplace = True)
 df.drop('cluster', axis = 1, inplace = True)
 
+df.to_csv('Prediction/events_cluster_encoded.csv', index = False)
