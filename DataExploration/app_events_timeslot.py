@@ -27,7 +27,7 @@ df['timeslot'] = pd.Series(new_col)
 df.drop(['data', 'ora_inizio', 'ora_fine'], axis = 1, inplace = True)
 df = df.drop_duplicates()
 
-
+l = len(df)
 for i in range(len(df)):
     row = df.iloc[i]
     # Build the list of new lines to be added, the lines are equal to the row with
@@ -37,7 +37,7 @@ for i in range(len(df)):
     for j in range(len(slot_list)):
         lines[j]['timeslot'] = slot_list[j]
     df = pd.concat([df, pd.DataFrame(lines)])
-df = df.iloc[1722:].reset_index(drop=True)
+df = df.iloc[:].reset_index(drop=True)
 df = df.drop_duplicates()
 
 writeDataframeToCSV(df, APP_DATA_PATH + 'events_with_timeslots.csv')
