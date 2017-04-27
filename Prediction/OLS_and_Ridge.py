@@ -11,8 +11,8 @@ def get_split(df):
     return df.drop(['activity', 'position_count'], axis = 1), df['activity'], df['position_count']
 
 
-df = pd.read_csv('Prediction/events_encoded.csv', encoding = 'latin1')
-df_pca = pd.read_csv('Prediction/events_pca_90.csv', encoding = 'latin1')
+df = pd.read_csv('events_encoded.csv', encoding = 'latin1')
+df_pca = pd.read_csv('events_pca_90.csv', encoding = 'latin1')
 
 x, y_act, y_pos = get_split(df)
 x_PCA, y_act_PCA, y_pos_PCA = get_split(df_pca)
@@ -25,29 +25,29 @@ def ridge(pred_string, y, y_PCA):
     
     # Ridge
     ridge = RidgeCV()
-    cross = cross_val_score(ridge, x_train, y_train, cv = 10)
-    cross_PCA = cross_val_score(ridge, x_train_PCA, y_train_PCA, cv = 10)
+    cross_ridge = cross_val_score(ridge, x_train, y_train, cv = 10)
+    cross_PCA_ridge = cross_val_score(ridge, x_train_PCA, y_train_PCA, cv = 10)
     print('RIDGE\n------')
-    print('error not PCA: ' + str(cross.mean()) + ' +/- ' + str(cross.std()*2))
-    print('error PCA: ' + str(cross_PCA.mean()) + ' +/- ' + str(cross_PCA.std()*2))
+    print('error not PCA: ' + str(cross_ridge.mean()) + ' +/- ' + str(cross_ridge.std()*2))
+    print('error PCA: ' + str(cross_PCA_ridge.mean()) + ' +/- ' + str(cross_PCA_ridge.std()*2))
     
-    '''
+    
     # SVR
     svr = SVR()
-    cross = cross_val_score(svr, x_train, y_train, cv = 10)
-    cross_PCA = cross_val_score(svr, x_train_PCA, y_train_PCA, cv = 10)
+    cross_svr = cross_val_score(svr, x_train, y_train, cv = 10)
+    cross_PCA_svr = cross_val_score(svr, x_train_PCA, y_train_PCA, cv = 10)
     print('\nSVR\n------')
-    print('error not PCA: ' + str(cross.mean()) + ' +/- ' + str(cross.std()*2))
-    print('error PCA: ' + str(cross_PCA.mean()) + ' +/- ' + str(cross_PCA.std()*2))
-    '''
+    print('error not PCA: ' + str(cross_svr.mean()) + ' +/- ' + str(cross_svr.std()*2))
+    print('error PCA: ' + str(cross_PCA_svr.mean()) + ' +/- ' + str(cross_PCA_svr.std()*2))
+    
     
     # Bayesian Ridge
     bay_ridge = BayesianRidge()
-    cross = cross_val_score(bay_ridge, x_train, y_train, cv = 10)
-    cross_PCA = cross_val_score(bay_ridge, x_train_PCA, y_train_PCA, cv = 10)
+    cross_bay = cross_val_score(bay_ridge, x_train, y_train, cv = 10)
+    cross_PCA_bay = cross_val_score(bay_ridge, x_train_PCA, y_train_PCA, cv = 10)
     print('\nBAYESIAN RIDGE\n------')
-    print('error not PCA: ' + str(cross.mean()) + ' +/- ' + str(cross.std()*2))
-    print('error PCA: ' + str(cross_PCA.mean()) + ' +/- ' + str(cross_PCA.std()*2))
+    print('error not PCA: ' + str(cross_bay.mean()) + ' +/- ' + str(cross_bay.std()*2))
+    print('error PCA: ' + str(cross_PCA_bay.mean()) + ' +/- ' + str(cross_PCA_bay.std()*2))
     
     '''
     # MLP
@@ -58,7 +58,7 @@ def ridge(pred_string, y, y_PCA):
     print('error not PCA: ' + str(cross.mean()) + ' +/- ' + str(cross.std()*2))
     print('error PCA: ' + str(cross_PCA.mean()) + ' +/- ' + str(cross_PCA.std()*2))
     '''
-    
+    return cross_ridge, cross_PCA_ridge, cross_svr, cross_PCA_svr, cross_bay, cross_PCA_bay
     
 ridge('ACTIVITIES', y_act, y_act_PCA)
 ridge('POSITIONS', y_pos, y_pos_PCA)
