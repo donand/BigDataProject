@@ -26,11 +26,20 @@ lm = LassoCV()
 X = data.drop(['activity','position_count'],axis=1)
 Y = data['activity']
 
+#Hold-Out Splitting
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, random_state = 1024)
 
 lm.fit(X_train,y_train)
-
 y_pred = lm.predict(X_test)
-
+#R2 score
 score = lm.score(X_test, y_test)
+print 'LassoCV HoldOut: R2 = ' + str(score)
+
+#Cross Validation
+from sklearn.model_selection import cross_val_score
+lm2 = LassoCV()
+scores = cross_val_score(lm2,X_train,y_train,scoring='r2',cv=10)
+print 'LassoCV XVal R2 = ' + str(scores.mean()) + ' +/- ' + str(scores.std() * 2)
+
+
