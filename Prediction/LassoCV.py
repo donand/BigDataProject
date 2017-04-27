@@ -16,31 +16,47 @@ import math
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LassoCV
 
+def get_split(dataset):
+    return dataset.drop(['activity','position_count'],axis=1), dataset['activity'], dataset['position_count']
 
 
-data = pd.read_csv("Prediction/events_cluster_encoded.csv",encoding="latin1")
-data_PCA=pd.read_csv("Prediction/events_pca_90.csv",encoding="latin1")
+full_data = pd.read_csv("Prediction/events_encoded.csv",encoding="latin1")
+pca_data = pd.read_csv("Prediction/events_pca_90.csv",encoding="latin1")
+
 
 
 lm = LassoCV()
+used_dataset = pca_data
+X, y_act, y_pos = get_split(used_dataset)
 
-X = data.drop(['activity','position_count'],axis=1)
-Y = data['activity']
 
 #Hold-Out Splitting
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, random_state = 1024)
+X_train, X_test, y_train, y_test = train_test_split(X, y_act, test_size = 0.2, random_state = 1024)
 
 lm.fit(X_train,y_train)
 y_pred = lm.predict(X_test)
 #R2 score
 score = lm.score(X_test, y_test)
+w_vec = pd.Series(lm.coef_)
+lasso_sel_feat = pd.Series(X_train.columns.values)[w_vec != 0]
+
+print 'Feature eliminated = ' + str(len(w_vec) - np.count_nonzero(w_vec))
 print 'LassoCV HoldOut: R2 = ' + str(score)
 
 #Cross Validation
 from sklearn.model_selection import cross_val_score
 lm2 = LassoCV()
 scores = cross_val_score(lm2,X_train,y_train,scoring='r2',cv=10)
+
 print 'LassoCV XVal R2 = ' + str(scores.mean()) + ' +/- ' + str(scores.std() * 2)
 
+#RFE
+from sklearn.feature_selection import RFECV
+lm3 = LassoCV()
+selector = RFECV(lm3, cv=3)
+X_opt = selector.fit_transform(X_train, y_train)
+rfe_score = selector.score(X_test,y_test)
+#Selected Features
+sel_feat = pd.Series(X_train.columns.values[selector.support_])
 
