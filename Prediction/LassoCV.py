@@ -19,8 +19,10 @@ from sklearn.linear_model import LassoCV
 def get_split(dataset):
     return dataset.drop(['activity','position_count'],axis=1), dataset['activity'], dataset['position_count']
 
+
 full_data = pd.read_csv("Prediction/events_encoded.csv",encoding="latin1")
 pca_data = pd.read_csv("Prediction/events_pca_90.csv",encoding="latin1")
+
 
 
 lm = LassoCV()
