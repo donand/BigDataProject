@@ -12,6 +12,7 @@ import gmplot
 import gmaps
 import numpy as np
 import math
+from OLS_and_Ridge import ridge
 
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LassoCV
@@ -59,4 +60,10 @@ X_opt = selector.fit_transform(X_train, y_train)
 rfe_score = selector.score(X_test,y_test)
 #Selected Features
 sel_feat = pd.Series(X_train.columns.values[selector.support_])
+
+from scipy.stats import ttest_ind
+#+++ se il p value è giga allora sono uguali +++
+ttest_ind(cross_bay,cross_ridge)
+
+cross_ridge, cross_PCA_ridge, cross_svr, cross_PCA_svr, cross_bay, cross_PCA_bay = ridge('POSITION',y_pos,y_pos_PCA)
 
