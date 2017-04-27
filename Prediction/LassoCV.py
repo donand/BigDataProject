@@ -19,6 +19,7 @@ from sklearn.linear_model import LassoCV
 
 
 data = pd.read_csv("Prediction/events_cluster_encoded.csv",encoding="latin1")
+data_PCA=pd.read_csv("Prediction/events_pca_90.csv",encoding="latin1")
 
 
 lm = LassoCV()
