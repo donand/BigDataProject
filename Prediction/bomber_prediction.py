@@ -19,10 +19,10 @@ df = pd.read_csv("Prediction/events_cluster_encoded.csv",encoding="latin1")
 df_PCA=pd.read_csv("Prediction/events_pca_90.csv",encoding="latin1")
 
 X = df.drop(['activity','position_count'],axis=1)
-Y = df['position_count']
+Y = df['activity']
 
 X_PCA = df_PCA.drop(['activity','position_count'],axis=1)
-Y_PCA = df_PCA['position_count']
+Y_PCA = df_PCA['activity']
 
 from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size = 0.2, random_state = 1024)
@@ -74,3 +74,11 @@ from scipy.stats import ttest_ind
 #+++ se il p value è giga allora sono uguali +++
 ttest_ind(scores1,scores2)
 
+from sklearn.ensemble import RandomForestRegressor
+RFR=RandomForestRegressor(n_estimators=50)
+scores3=cross_val_score(RFR, X_train, y_train, cv=10, n_jobs=-1)
+scores3_PCA=cross_val_score(RFR, X_train_PCA, y_train_PCA, cv=10, n_jobs=-1)
+print ('\nmean ' + str(scores3.mean())+ '+/- ' + str(scores3.std()*2))
+print ('\nmean ' + str(scores3_PCA.mean())+ '+/- ' + str(scores3_PCA.std()*2))
+
+RFR.fit(X_train,y_train)
