@@ -21,13 +21,13 @@ def get_split(dataset):
     return dataset.drop(['activity','position_count'],axis=1), dataset['activity'], dataset['position_count']
 
 
-full_data = pd.read_csv("Prediction/events_encoded.csv",encoding="latin1")
-pca_data = pd.read_csv("Prediction/events_pca_90.csv",encoding="latin1")
+full_data = pd.read_csv("events_encoded.csv",encoding="latin1")
+pca_data = pd.read_csv("events_pca_90.csv",encoding="latin1")
 
 
 
 lm = LassoCV()
-used_dataset = pca_data
+used_dataset = full_data
 X, y_act, y_pos = get_split(used_dataset)
 
 
