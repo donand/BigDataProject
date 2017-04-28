@@ -21,7 +21,8 @@ df.drop(df.columns[tmp], axis=1, inplace=True)
 df.drop(['latitude','longitude','cell'],axis=1, inplace=True)
 
 #trovo i 4 cluster più grandi
-perf=[[df[df['cluster']==i].activity.sum(),df[df['cluster']==i].position_count.sum(),i] for i in range(df['cluster'].min(),df['cluster'].max())]
+perf=[[df[(df['cluster']==i) & (df['timeslot'] == j)].activity.sum(),df[(df['cluster']==i) & (df['timeslot'] == j)].position_count.sum(),i, j] for i in range(df['cluster'].min(),df['cluster'].max() + 1) for j in range(0,4)]
+
 perf.sort(key=lambda x: x[0], reverse= True)
 perf=np.array(perf)
 
