@@ -6,6 +6,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.svm import SVR
 from sklearn.linear_model import BayesianRidge
 from sklearn.neural_network import MLPRegressor
+from sklearn.ensemble import RandomForestRegressor
 
 def get_split(df):
     return df.drop(['activity', 'position_count'], axis = 1), df['activity'], df['position_count']
@@ -31,7 +32,7 @@ def ridge(pred_string, y, y_PCA):
     print('error not PCA: ' + str(cross_ridge.mean()) + ' +/- ' + str(cross_ridge.std()*2))
     print('error PCA: ' + str(cross_PCA_ridge.mean()) + ' +/- ' + str(cross_PCA_ridge.std()*2))
     
-    
+    '''
     # SVR
     svr = SVR()
     cross_svr = cross_val_score(svr, x_train, y_train, cv = 10)
@@ -39,7 +40,7 @@ def ridge(pred_string, y, y_PCA):
     print('\nSVR\n------')
     print('error not PCA: ' + str(cross_svr.mean()) + ' +/- ' + str(cross_svr.std()*2))
     print('error PCA: ' + str(cross_PCA_svr.mean()) + ' +/- ' + str(cross_PCA_svr.std()*2))
-    
+    '''
     
     # Bayesian Ridge
     bay_ridge = BayesianRidge()
@@ -49,6 +50,14 @@ def ridge(pred_string, y, y_PCA):
     print('error not PCA: ' + str(cross_bay.mean()) + ' +/- ' + str(cross_bay.std()*2))
     print('error PCA: ' + str(cross_PCA_bay.mean()) + ' +/- ' + str(cross_PCA_bay.std()*2))
     
+    
+    # Random Forest
+    rf = RandomForestRegressor()
+    cross_rf = cross_val_score(rf, x_train, y_train, cv = 10)
+    cross_PCA_rf = cross_val_score(rf, x_train_PCA, y_train_PCA, cv = 10)
+    print('\nRANDOM FOREST\n------')
+    print('error not PCA: ' + str(cross_rf.mean()) + ' +/- ' + str(cross_rf.std()*2))
+    print('error PCA: ' + str(cross_PCA_rf.mean()) + ' +/- ' + str(cross_PCA_rf.std()*2))
     '''
     # MLP
     mlp = MLPRegressor(max_iter = 1000)
@@ -60,8 +69,8 @@ def ridge(pred_string, y, y_PCA):
     '''
     return cross_ridge, cross_PCA_ridge, cross_svr, cross_PCA_svr, cross_bay, cross_PCA_bay
     
-ridge('ACTIVITIES', y_act, y_act_PCA)
-ridge('POSITIONS', y_pos, y_pos_PCA)
+#ridge('ACTIVITIES', y_act, y_act_PCA)
+#ridge('POSITIONS', y_pos, y_pos_PCA)
 
 from sklearn.feature_selection import mutual_info_regression
 feat = mutual_info_regression(x, y_pos, random_state = 1024)
