@@ -10,7 +10,7 @@ import csv
 import numpy as np
 import gmplot
 
-dataset = pd.read_csv('Data/fuorisalone_foursquare-history-2016-04.csv', converters={'history.date': lambda x: x.replace('T',''), 'history.date': lambda x: x.replace('Z','')})
+dataset = pd.read_csv('../Data/fuorisalone_foursquare-history-2016-04.csv', converters={'history.date': lambda x: x.replace('T',''), 'history.date': lambda x: x.replace('Z','')})
 dataset['history.date']=pd.to_datetime(dataset['history.date'],format='%Y-%m-%dT%H:%M')
 
 dataset.describe()

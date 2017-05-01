@@ -12,6 +12,7 @@ import gmplot
 import gmaps
 import numpy as np
 import math
+#from OLS_and_Ridge import ridge
 
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LassoCV
@@ -20,19 +21,19 @@ def get_split(dataset):
     return dataset.drop(['activity','position_count'],axis=1), dataset['activity'], dataset['position_count']
 
 
-full_data = pd.read_csv("Prediction/events_encoded.csv",encoding="latin1")
-pca_data = pd.read_csv("Prediction/events_pca_90.csv",encoding="latin1")
+full_data = pd.read_csv("events_encoded.csv",encoding="latin1")
+pca_data = pd.read_csv("events_pca_90.csv",encoding="latin1")
 
 
 
 lm = LassoCV()
-used_dataset = pca_data
+used_dataset = full_data
 X, y_act, y_pos = get_split(used_dataset)
 
 
 #Hold-Out Splitting
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y_act, test_size = 0.2, random_state = 1024)
+X_train, X_test, y_train, y_test = train_test_split(X, y_pos, test_size = 0.2, random_state = 1024)
 
 lm.fit(X_train,y_train)
 y_pred = lm.predict(X_test)
@@ -54,9 +55,18 @@ print 'LassoCV XVal R2 = ' + str(scores.mean()) + ' +/- ' + str(scores.std() * 2
 #RFE
 from sklearn.feature_selection import RFECV
 lm3 = LassoCV()
+lm4 = LassoCV()
 selector = RFECV(lm3, cv=3)
 X_opt = selector.fit_transform(X_train, y_train)
 rfe_score = selector.score(X_test,y_test)
 #Selected Features
 sel_feat = pd.Series(X_train.columns.values[selector.support_])
+scores_rfe = cross_val_score(lm4,X_opt,y_train,scoring='r2',cv=10)
+print 'LassoCV RFE XVal R2 = ' + str(scores_rfe.mean()) + ' +/- ' + str(scores_rfe.std() * 2)
+
+from scipy.stats import ttest_ind
+#+++ se il p value è giga allora sono uguali +++
+ttest_ind(scores,scores_rfe)
+
+#cross_ridge, cross_PCA_ridge, cross_svr, cross_PCA_svr, cross_bay, cross_PCA_bay = ridge('POSITION',y_pos,y_pos_PCA)
 
