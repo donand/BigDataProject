@@ -9,7 +9,6 @@ import pandas as pd
 import json
 from pandas.io.json import json_normalize
 import gmplot
-import gmaps
 import numpy as np
 import math
 from sklearn.cluster import DBSCAN
@@ -38,12 +37,13 @@ def cluster_by_time(start_time, end_time, eps, min_samples, filename):
     db = DBSCAN(eps=eps, min_samples=min_samples).fit(sliced)
     labels = db.labels_
     max_color = int("FFFFFF",16)
-    colors = [hex(i*max_color/(labels.max() + 1)) for i in range(1, labels.max() + 2)]
+    #colors = [hex(i*max_color/(labels.max() + 1)) for i in range(1, labels.max() + 2)]
     gmap = gmplot.GoogleMapPlotter(45.4822916634, 9.1875001735, 13)
     for label in range(0, labels.max() + 1):
-        gmap.scatter(sliced['latitude'][pd.Series(labels) == label], sliced['longitude'][pd.Series(labels) == label], COLORS_HC[label], size=10, marker=False)
-        print 'Cluster ' + str(label) + ' ' + str(labels.tolist().count(label))
+        #gmap.scatter(sliced['latitude'][pd.Series(labels) == label], sliced['longitude'][pd.Series(labels) == label], COLORS_HC[label], size=10, marker=False)
+        print('Cluster ' + str(label) + ' ' + str(labels.tolist().count(label)))
         plt.scatter(sliced['longitude'][pd.Series(labels) == label], sliced['latitude'][pd.Series(labels) == label], color = COLORS_LAB[label])
+    gmap.heatmap(sliced['latitude'][pd.Series(labels) != -1], sliced['longitude'][pd.Series(labels) != -1], threshold = 1, radius = 25, opacity = 0.7)
     gmap.draw("DataExploration/MapPlots/" + filename)
     plt.show()
     
